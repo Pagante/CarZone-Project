@@ -55,7 +55,7 @@ ROOT_URLCONF = 'CarZoneApp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [Path.joinpath(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -119,3 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT= Path.joinpath(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    Path.joinpath(BASE_DIR, 'CarZoneApp/static'),
+]
