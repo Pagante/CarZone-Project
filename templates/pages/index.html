@@ -2,6 +2,7 @@
 <!-- Main header end -->
 
 <!-- Banner start -->
+{% block title %} | Home {% endblock %}
 {% block content %}
 
 {% load humanize %}
@@ -141,7 +142,7 @@
                                 <div class="overlap-box">
                                     <div class="overlap-btns-area">
                                         <div class="car-magnify-gallery">
-                                        
+
                                             {% if car.car_photo_1 %}
                                             <a href="{{ car.car_photo_1.url }}" class="overlap-btn">
                                                 <i class="fa fa-expand"></i>
@@ -327,7 +328,7 @@
                     </div>
                 </div>
                 {% endfor %}
-                
+
             </div>
         </div>
     </div>
@@ -427,4 +428,3 @@
     </div>
 </div>
 {% endblock %}
-

@@ -26,7 +26,6 @@ def cars(request):
         'body_style_search':body_style_search
     }
 
-
     return render(request, 'cars/cars.html',data)
 
 
@@ -57,7 +56,7 @@ def search(request):
 
         if model:
             cars = cars.filter(model__iexact=model)
-    
+
     if 'city' in request.GET:
         city = request.GET['city']
 
