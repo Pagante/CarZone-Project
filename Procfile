@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn CarZoneApp.wsgi
+web: gunicorn CarZoneApp.wsgi --log-file -

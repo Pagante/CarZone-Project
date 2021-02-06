@@ -110,7 +110,10 @@ WSGI_APPLICATION = 'CarZoneApp.wsgi.application'
 
 #     }
 # }
-DATABASE = {'default':dj_database_url.config(default='postgres://postgres:Happyzone@localhost/carzone_db')}
+# DATABASE = {'default':dj_database_url.config(default='postgres://postgres:Happyzone@localhost/carzone_db')}
+
+local_db = 'postgres://postgres:Happyzone@localhost/carzone_db'
+DATABASES = {'default': dj_database_url.config(default=local_db)}
 
 
 # Password validation
