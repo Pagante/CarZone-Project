@@ -26,7 +26,7 @@ SECRET_KEY = 's97q4m4nm0a$@p8ky=ira0e4q=*wys9n&s5o!8k314rl@p#0xg'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pgcarzonenew.herokuapp.com']
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
