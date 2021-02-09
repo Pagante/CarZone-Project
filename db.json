@@ -100,20 +100,5 @@
         "is_features": true,
         "created_date": "2021-01-10T17:45:39Z"
     }
-},
-{
-    "model": "cars.car",
-    "pk": 4,
-    "fields": {
-        "car_title": "2017 Jaguar F-PACE",
-        "state": "IL",
-        "city": "Chicago",
-        "color": "Green",
-        "model": "F-PACE",
-        "year": 2017,
-        "condition": "Used",
-        "price": 40000,
-        "description": ""
-    }
 }
 ]
